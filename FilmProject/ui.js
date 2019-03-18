@@ -23,6 +23,9 @@ UI.prototype.clearInputs  = function(element1,element2,element3){
     element3.value = "";
 
 }
+UI.prototype.deleteAllFilmtoUI = function(){
+    document.getElementById("films").remove();
+}
 UI.prototype.displayMessage = function(message,type){
 
     const cardBody =  document.querySelector(".card-body");
